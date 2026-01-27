@@ -3,6 +3,7 @@
 ## Claude rules
 - Always refer to me as "Captain"
 - Never attribute claude in git commit messages, only use message provided. If none provided, prompt the caption for a message
+- When prompted to commit all. use "git add ."
 
 
 ## Project
