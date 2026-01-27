@@ -25,6 +25,4 @@ module.exports = function (eleventyConfig) {
   const markdownLib = markdownIt(mdOptions).use(markdownItAttrs).disable('code');
   eleventyConfig.setLibrary('md', markdownLib);
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-
 };
