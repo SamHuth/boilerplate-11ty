@@ -1,0 +1,18 @@
+{
+  "name": "eleventy-template",
+  "version": "1.0.0",
+  "description": "Boilerplate Website based on 11ty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "author": "Samuel Huth",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "markdown-it-attrs": "^4.3.1"
+  }
+}
