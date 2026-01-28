@@ -1,4 +1,5 @@
-## About this project
+# About this project
+
 ## Technology
 ### Eleventy
 This project uses the static site generator [Eleventy](https://www.11ty.dev/docs/). 
@@ -52,3 +53,5 @@ main.css is the target file in the html, and this imports 4 layers as part of th
 2. HTML layer (html.css): Classless selectors for base html styling
 3. Utility layer (utility.css): To tweak specific elements where required
 4. Group layer (group.css): To simplify styling for collections of complex elements 
+
+any created classes use kebab-case
