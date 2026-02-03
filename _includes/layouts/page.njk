@@ -9,12 +9,10 @@
   </head>
   <body id="site">
     <a href="#content">Skip to content</a>
+    {% include "partials/navigation.njk" %}
     {% include "partials/header.njk" %}
-    <aside>
-      {% include "partials/navigation.njk" %}
-    </aside>
+    {% include "partials/breadcrumbs.njk" %}
     <main id="content">
-        <h1>{{ title }}</h1>
         {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}

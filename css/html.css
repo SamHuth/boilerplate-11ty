@@ -1,4 +1,13 @@
 /* HTML Elements */
 @layer html {
 
+    body{
+        max-width: 90ch;
+        margin: 0 auto;
+    }
+    nav, header, main, footer{
+        background: #eee;
+        margin-bottom: 2rem;
+        
+    }
 }

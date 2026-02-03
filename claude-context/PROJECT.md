@@ -54,4 +54,4 @@ main.css is the target file in the html, and this imports 4 layers as part of th
 3. Utility layer (utility.css): To tweak specific elements where required
 4. Group layer (group.css): To simplify styling for collections of complex elements 
 
-any created classes use kebab-case
+use kebab-case for all classes
