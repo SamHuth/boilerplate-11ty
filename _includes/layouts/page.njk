@@ -16,5 +16,12 @@
         {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}
+
+  {% for item in collections.all %}
+  <url>
+    <loc>{{ site.url }}{{ item.url }}</loc>
+  </url>
+{% endfor %}
+
   </body>
 </html>

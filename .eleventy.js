@@ -5,10 +5,12 @@ module.exports = function (eleventyConfig) {
   // Eleventy PassThrough
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy({ 'robots.txt': 'robots.txt' });
+  eleventyConfig.addPassthroughCopy({ 'sitemap.xml': 'sitemap.xml' });
 
   // Current Year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // Create Breadcrumbs
   eleventyConfig.addShortcode("breadcrumbs", (path) => {
     const pages = path.split('/').filter(val => val);
     let cumulativePath = '';
@@ -37,7 +39,7 @@ module.exports = function (eleventyConfig) {
     `;
   });
 
-  // Add target=blank custom code
+  // Add MarkdownIT with attributes code
   const mdOptions = {
     html: true,
     linkify: true,
@@ -46,5 +48,13 @@ module.exports = function (eleventyConfig) {
 
   const markdownLib = markdownIt(mdOptions).use(markdownItAttrs).disable('code');
   eleventyConfig.setLibrary('md', markdownLib);
+
+  // Format dates for 
+  eleventyConfig.addFilter('formatDate', function (date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  })
 
 };

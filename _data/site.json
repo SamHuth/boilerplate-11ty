@@ -1,8 +1,8 @@
 {
-  "title": "",
+  "title": "Company Name",
   "domain": "",
-  "url": "",
-  "company": "Company Name",
+  "url": "https://branchingweb.com.au",
+  "separator":" - ",
   "author": {
     "name": "",
     "email": "",

@@ -6,10 +6,6 @@ meta:
 date: Last Modified
 tags: menu
 ---
-
-
-# ADD BREADCRUMBS TEMPLATE!!!!
-# ADD YOAST SCHEMA TEMPLATE - see docs !!!!
-# ADD BREADCRUMBS TEMPLATE!!!!
-# ADD BREADCRUMBS TEMPLATE!!!!
-# ADD BREADCRUMBS TEMPLATE!!!!
+# Todo
+- ADD YOAST SCHEMA TEMPLATE - see docs !!!! - https://developer.yoast.com/features/schema/pieces/breadcrumb/
+- rss for blog? - https://www.11ty.dev/docs/plugins/rss/
