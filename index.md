@@ -7,5 +7,3 @@ date: Last Modified
 tags: menu
 ---
 # Todo
-- ADD YOAST SCHEMA TEMPLATE - see docs !!!! - https://developer.yoast.com/features/schema/pieces/breadcrumb/
-- rss for blog? - https://www.11ty.dev/docs/plugins/rss/

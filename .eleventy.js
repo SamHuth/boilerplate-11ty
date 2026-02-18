@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
     `;
   });
 
-  // Add MarkdownIT with attributes code
+  // Add MarkdownIt with attributes code
   const mdOptions = {
     html: true,
     linkify: true,
